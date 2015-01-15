@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<!-- Имена по-умолчанию в таблице рекордов -->
+	<string-array name="names">
+		<item>Jolka Polka</item>
+		<item>Tommy Atkins</item>
+		<item>John Doe</item>
+		<item>Wendy Wellesley</item>
+		<item>Lady Muck</item>
+		<item>Mrs Kafoops</item>
+		<item>Uncle Tom</item>
+		<item>Fred Bloggs</item>
+		<item>Justin Case</item>
+		<item>Joe Shmoe</item>
+	</string-array>
+	
+	<!-- Очки по-умолчанию в таблице рекордов -->
+	<integer-array name="scores">
+		<item>300</item>
+		<item>270</item>
+		<item>240</item>
+		<item>210</item>
+		<item>180</item>
+		<item>150</item>
+		<item>120</item>
+		<item>90</item>
+		<item>60</item>
+		<item>30</item>
+	</integer-array>
+</resources>

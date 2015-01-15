@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="application">Rally</string>
+	<string name="application_upper">RALLY</string>
+
+	<!--
+		КЛЮЧИ ДЛЯ SHARED PREFERENCES  
+	-->
+	
+	<string name="preferences_id">A5D6E47D–9C56–4273–A963–9862437C696C</string>
+	<string name="preferences_score_oldname">E75EB037–652F–44C6–B0C6–C79565577EBC</string>
+	<string name="preferences_score_array">2DFF0024–CF25–499B–94A2–38E12D3CFE74</string>
+	<string name="preferences_sound">F0543BCC–8EE0v4EFF–8FF6–A82717BE2818</string>
+
+	<!-- 
+		ИГРА 
+	-->
+	<string name="rally_text_game_a">game A</string>
+	<string name="rally_text_short_game_a">A</string>
+	<string name="rally_text_game_b">game B</string>
+	<string name="rally_text_short_game_b">B</string>
+	<string name="rally_text_menu">menu</string>
+	<string name="rally_pause_text">PAUSED\nClick Button To Resume</string>
+	<string name="rally_pause_button_resume">Resume</string>
+	<string name="rally_gameover_text">GAME OVER</string>
+	<string name="rally_gameover_score">Score</string>
+	<string name="rally_gameover_btn_next">Next</string>
+	<string name="rally_parameter_instance">7E455F97–E2AF–461C–B248–4F7E4A1EC0F6</string>
+	<string name="rally_parameter_mode">F9493F73–854F–4D81–B88F–05EDB94120A0</string>
+	
+	<!-- 
+		МЕНЮ 
+	-->
+	<string name="rally_menu_game_a">Game A</string>
+	<string name="rally_menu_game_b">Game B</string>
+	<string name="rally_menu_score">Score</string>
+	<string name="rally_menu_sound_on">Sound on</string>
+	<string name="rally_menu_sound_off">Sound off</string>
+	
+	<!-- 
+		СПИСОК РЕКОРДОВ 
+	-->
+
+	<string name="score_activity_title">High Scores</string>
+	<string name="score_default_name">Unknown</string>
+	<string name="score_dialog_name">Your name</string>
+	<string name="score_parameter_score">2EE1DE05–9F12–4AD6–9B9B–E3B840AE8D76</string>
+	<string name="score_parameter_type">53A65A50–051A–4048–B654–F6E135EB0835</string>
+
+</resources>

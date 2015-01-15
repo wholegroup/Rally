@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+	<color name="rally_color_view_bg">#9AA6A9</color>
+	<color name="rally_color_view_paint">#000000</color>
+	<color name="rally_color_view_paint_invisible">#33000000</color>
+	<color name="rally_color_view_line">#DDDD00</color>
+	<color name="rally_color_view_grass">#266834</color>
+</resources>

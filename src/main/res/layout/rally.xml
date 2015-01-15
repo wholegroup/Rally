@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#000000">
+
+	<!-- фоновое изображение -->
+	<View
+		android:id="@+id/rally_layout_image"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:background="@drawable/background" />
+
+	<!-- рамка -->
+	<View
+		android:id="@+id/rally_layout_frame"
+		android:layout_width="328dip"
+		android:layout_height="241dip"
+		android:layout_gravity="center"
+		android:background="@drawable/rally" />
+
+	<!-- окно вывода игры --> 
+	<com.wholegroup.rally.RallyView
+		android:id="@+id/rally_view"
+		android:layout_width="258dip"
+		android:layout_height="166dip"
+		android:layout_gravity="center" />
+
+	<!-- кнопка влево -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageButton
+			android:id="@+id/rally_btn_left"
+			android:layout_width="64dip"
+			android:layout_height="64dip"
+			android:layout_marginLeft="5dip"
+			android:layout_marginTop="195dip"
+   		android:scaleType="fitXY"
+   		android:src="@drawable/btn_circle_left"
+   		android:background="@android:color/transparent"
+			android:contentDescription="@null" />
+   </LinearLayout>
+
+	<!-- кнопка вправо -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageButton
+			android:id="@+id/rally_btn_right"
+			android:layout_width="64dip"
+			android:layout_height="64dip"
+			android:layout_marginLeft="410dip"
+			android:layout_marginTop="195dip"
+   		android:scaleType="fitXY"
+   		android:src="@drawable/btn_circle_right"
+   		android:background="@android:color/transparent"
+			android:contentDescription="@null" />
+   </LinearLayout>
+
+	<!-- кнопка игра А -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageButton
+			android:id="@+id/rally_btn_game_a"
+			android:layout_width="36dip"
+			android:layout_height="26dip"
+			android:layout_marginLeft="420dip"
+			android:layout_marginTop="16dip"
+			android:scaleType="fitXY"
+   		android:src="@drawable/btn_rect"
+   		android:background="@android:color/transparent"
+			android:contentDescription="@null" />
+   </LinearLayout>
+   
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+   	<TextView
+	   	android:id="@+id/rally_text_game_a"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+   		android:textColor="#000000"
+   		android:text="@string/rally_text_game_a" />
+   </LinearLayout>
+
+	<!-- кнопка игра B -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageButton
+			android:id="@+id/rally_btn_game_b"
+			android:layout_width="36dip"
+			android:layout_height="26dip"
+			android:layout_marginLeft="420dip"
+			android:layout_marginTop="55dip"
+			android:scaleType="fitXY"
+   		android:src="@drawable/btn_rect"
+   		android:background="@android:color/transparent"
+			android:contentDescription="@null" />
+   </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+   	<TextView
+	   	android:id="@+id/rally_text_game_b"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+			android:layout_marginTop="16dip"
+   		android:textColor="#000000"
+   		android:text="@string/rally_text_game_b" />
+   </LinearLayout>
+
+	<!-- кнопка меню -->
+	<LinearLayout
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent">
+		<ImageButton
+			android:id="@+id/rally_btn_menu"
+			android:layout_width="36dip"
+			android:layout_height="26dip"
+			android:layout_marginLeft="420dip"
+			android:layout_marginTop="94dip"
+			android:scaleType="fitXY"
+   		android:src="@drawable/btn_rect"
+   		android:background="@android:color/transparent"
+			android:contentDescription="@null" />
+   </LinearLayout>
+
+	<LinearLayout
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content">
+	   <TextView
+   		android:id="@+id/rally_text_menu"
+   		android:layout_width="wrap_content"
+   		android:layout_height="wrap_content"
+			android:layout_marginTop="32dip"
+   		android:textColor="#000000"
+   		android:text="@string/rally_text_menu" />
+   </LinearLayout>
+
+	<!-- окно паузы -->
+	<RelativeLayout
+		android:id="@+id/rally_pause_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="invisible"
+		android:background="#BB000001">
+		
+		<LinearLayout
+			android:layout_centerInParent="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+
+			<TextView
+				android:id="@+id/rally_pause_text"
+				android:text="@string/rally_pause_text"
+				android:lineSpacingMultiplier="1.5"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:textColor="#ff8888ff"
+				android:textAppearance="?android:attr/textAppearanceLarge" />
+
+			<Button 
+				android:id="@+id/rally_pause_button"
+				android:focusableInTouchMode="true"
+				android:text="@string/rally_pause_button_resume" 
+				android:layout_marginTop="10dip"
+				android:layout_height="wrap_content" 
+				android:layout_width="wrap_content"
+				android:layout_gravity="center_horizontal" />
+				
+		</LinearLayout>
+			
+	</RelativeLayout>
+ 	
+	<RelativeLayout
+		android:id="@+id/rally_gameover_layout"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:visibility="invisible"
+		android:background="#BB000001">
+
+		<LinearLayout
+			android:layout_centerInParent="true"
+			android:layout_width="fill_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical" >
+	
+			<TextView
+				android:text="@string/rally_gameover_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center"
+				android:textSize="45sp"
+				android:textColor="#FF0000"
+				android:textStyle="bold"
+			/>
+
+			<TextView
+				android:id="@+id/rally_gameover_score"
+				android:text="Score: 99999"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="5dip"
+				android:textAppearance="?android:attr/textAppearanceLarge"
+				android:gravity="center"
+			/>
+
+			<Button
+				android:id="@+id/rally_gameover_button_next"
+				android:focusableInTouchMode="true"
+				android:text="@string/rally_gameover_btn_next" 
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="20dip" 
+				android:paddingRight="20dip"
+				android:layout_marginTop="20dip"
+				android:layout_gravity="center_horizontal"/>
+
+		</LinearLayout>
+	</RelativeLayout>
+ 	
+</FrameLayout>
