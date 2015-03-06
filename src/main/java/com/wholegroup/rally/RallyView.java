@@ -40,7 +40,7 @@ public class RallyView extends View
 	
 	/** Отношение горизонтального расстояния между полосами к длине полосы. */
 	private final static float LANE_RELATION = 0.4f;
-	
+
 	/** Угол наклона левой стороны трассы. */
 	private final static double ANGLE_LEFT = Math.PI / 6.0f;
 	
@@ -221,7 +221,7 @@ public class RallyView extends View
 
 		// получение формата вывода часов
 		m_bIs24Hour = DateFormat.is24HourFormat(getContext());
-		
+
 		// массивы для отрисовки трассы
 		m_arrTrack       = new Path[Rally.FIELDHEIGHT][Rally.FIELDWIDTH];
 		m_arrTrackBorder = new Path[2][Rally.FIELDHEIGHT];
